@@ -83,7 +83,7 @@ label{
     position: absolute;
     left: 16px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
     color: #6b7280;
 }
 
@@ -126,11 +126,11 @@ input[type="number"]{
     transition: all 0.2s;
 }
 
-.freqBtns:hover{
+.freqBtn:hover{
     background-color: #e5e7eb;
 }
 
-.freqBtns.active{
+.freqBtn.active{
     background-color: #0d9488;
     color: white;
 }
@@ -166,6 +166,11 @@ input[type="number"]{
     border-radius: 999px;
     font-size: 14px;
     font-weight: 500;
+}
+
+.verdict-excellent {
+    background-color: #c5ffee;
+    color: #3c836e;
 }
 
 .verdict-great {
