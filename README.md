@@ -13,6 +13,7 @@ The app calculates:
 
 It makes it easier to judge the real value of a purchase.
 
-## ▶️ How to Run
+## How to Run
 1. Clone or download the repository
 2. Open `index.html` in your browser
+3. Thats it!
