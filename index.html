@@ -19,10 +19,42 @@
         </div>
 
         <div class="card">
+            <div class="container2">
+                <div class="input">
+                    <label for="price">Item Name</label>
+                    <div class="nameInput">
+                        <input type="text" id="name" placeholder="Logitech G715">
+                    </div>
+                </div>
+
+                <div class="input" style="width: 44%;">
+                    <label for="currency">Currency</label>
+                    <div class="select" id="currencyDropdown">
+                        <div class="selectSelected" tabindex="0">
+                            <span id="selectedCurrency">Euro (€)</span>
+                            <span class="selectArrow">▼</span>
+                        </div>
+                        <ul class="selectList" id="currencyList">
+                            <li class="selectItem active" data-symbol="€">Euro (EUR €)</li>
+                            <li class="selectItem" data-symbol="$">US Dollar (USD $)</li>
+                            <li class="selectItem" data-symbol="¥">Japanese Yen (JPY ¥)</li>
+                            <li class="selectItem" data-symbol="£">British Pound (GBP £)</li>
+                            <li class="selectItem" data-symbol="¥">Chinese Yuan (CNY ¥)</li>
+                            <li class="selectItem" data-symbol="$">Canadian Dollar (CAD $)</li>
+                            <li class="selectItem" data-symbol="$">Australian Dollar (AUD $)</li>
+                            <li class="selectItem" data-symbol="$">Hong Kong Dollar (HKD $)</li>
+                            <li class="selectItem" data-symbol="$">Singapore Dollar (SGD $)</li>
+                            <li class="selectItem" data-symbol="₹">Indian Rupee (INR ₹)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
             <div class="input">
                 <label for="price">Item Price</label>
                 <div class="priceInput">
-                    <span class="symbol">€</span>
+                    <span class="symbol" id="currencySymbol">€</span>
                     <input type="number" id="price" value="0" step="0.01" min="0">
                 </div>
             </div>
