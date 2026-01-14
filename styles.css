@@ -90,21 +90,29 @@ label{
 input[type="number"]{
     width: 100%;
     padding: 12px 16px;
-    background-color: #f9fafb;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     transition: all 0.2s;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 0 2px #0d9488;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 0 2px #0d9488;
 }
 
 .priceInput input{
     padding-left: 32px;
-}
-
-input[type="number"]{
-    outline: none;
-    background-color: white;
-    box-shadow: 0 0 0 2px #0d9488;
 }
 
 .freqButtons{
@@ -201,4 +209,66 @@ input[type="number"]{
 
 .hidden{
     display: none;
+}
+
+.nameInput{
+    width: 90%;
+}
+
+.container2{
+    display: flex;
+}
+
+.select {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+}
+.selectSelected {
+    background: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px #0d9488;
+    color: #374151;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s;
+}
+.selectArrow {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #0d9488;
+}
+.selectList {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: none;
+}
+.selectList.open {
+    display: block;
+}
+.selectItem {
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #374151;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.1s, color 0.2s;
+}
+.selectItem:hover, .selectItem.active {
+    background: #f5f5f5;
+    color: #000;
 }
